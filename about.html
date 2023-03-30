@@ -2,29 +2,39 @@
 <html>
 <head>
 <link href="style.css" rel="stylesheet">
+<script>
+    function userGood() {
+        document.getElementById("response").innerHTML = `Good to hear!
+        I'm doing pretty good too, because I've just re-figured out how to attach HTML buttons to Javascript functions.
+        Exciting times!`;
+    }
+    function userBad() {
+        document.getElementById("response").innerHTML = `Sorry to hear that. I hope things improve for you quickly!`
+    }
+</script>
 </head>
 <body>
-<h1 class="title">About</h1>
 <p>
-It is 2:01 AM. About an hour ago, I learned that website domains are actually pretty cheap and 
-decided that I could no longer live in a world where I did not have a website.
-
-So I bought a website domain and went to work, using nothing more than HTML, CSS, and Github. Depending on when you read this,
-I may have moved on to cooler, sleeker things, such as Javascript.
-
-Maybe you want to know more about me. But I don't think I would like to say anything more. You may be able to deduce more about
-what sort of person I am by seeing what's on this website. I can't get around that. However, I really don't like identity. 
-I sort of dislike it a lot.
+Late last night, I wrote an about page. I woke up this morning and decided it was too cringe to remain.
+All the same, it seems disingenuous to hide it altogether. It's a piece of this website's history. So you can read it <a href="aboutOld.html">here</a> if you'd like.
 </p>
 <p>
-You'll never know my real name, because I don't want a name. You'll never know my gender, because god knows I don't need one of those.
-Here, the words I type are my only definition.
+Well, not enough people make stupid useless websites and I decided to stop being part of the problem.
+If you want to call me something, you can call me Petricourse.
+This website is 100% homemade, in the sense that I am just making it myself out of raw HTML and CSS.
+I bought the domain from Google Domains, and am using Github to store the website data. I am currently writing this text raw into an html file using Visual Studio Code.
+I intend to put whatever I feel like on here. Probably mostly just insane ramblings about random topics and pictures that I like.
+I hope one day the CSS will be so outlandish and there will be so many subpages with no consistent navigational paradigms that
+this place will be a technicolor hell maze that nobody has any desire to ever visit.
 </p>
 <p>
-God I love having a website. I can be as insufferable as I want, confident that nobody will ever have any reason to read these words and judge me.
+Now that I think about it, I kind of wish I had bought the domain technicolorhellmaze.com instead of petricourse.com. Now <i>that's</i> a fucking band name.
 </p>
+<hr>
 <p>
-But hey, if you do find this website, feel free to reach out to petricourse@gmail.com.
+<div id="response">Anyway, enough about me. How are you?</div>
 </p>
+<button onclick=userGood() id="goodbutton">I'm doing good.</button>
+<button onClick=userBad() id="badbutton">I'm doing bad.</button>
 </body>
 </html>
