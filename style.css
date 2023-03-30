@@ -1,3 +1,7 @@
+* {
+    font-family: monospace;
+}
+
 .title {
     color: green;
     text-decoration-line: underline;
