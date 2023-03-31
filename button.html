@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<link href="button.css" rel="stylesheet">
+<script>
+    let clickCount = 0;
+    let button = document.getElementById("button");
+    button.onclick = buttonClicked();
+    function buttonClicked() {
+        clickCount++;
+        let timesCounter = document.getElementById("timesCounter");
+        timesCounter.innerHTML = clickCount + " TIMES!!";
+        if (clickCount == 69) {
+            document.getElementById("everything").innerHTML = "<p font-size: 400px>NICE.</p>"
+        }
+    }
+</script>
+</head>
+<body>
+<div id="everything">
+<h1>Button</h1>
+<p>Button:</p>
+<button id="button" onclick=buttonClicked()>This is the button.</button>
+<p>You have pressed the button:</p>
+<div id="timesCounter">0 TIMES!!</div>
+</div>
+</body>
